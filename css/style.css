@@ -20,8 +20,8 @@ html,body{
     width: 100%;
     background-color: black;
     color: white;
-    /* font-family: customGilroyFont; */
-    font-family: gilroy;
+    font-family: customGilroyFont;
+    /* font-family: gilroy; */
 }
 
 body{
