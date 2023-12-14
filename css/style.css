@@ -1,0 +1,328 @@
+
+/* @font-face {
+    font-family: 'customGilroyFont';
+    src: url(../font/gilroy/Gilroy-Light.ttf) format('truetype'), 
+}   */
+
+@font-face {
+    font-family: 'customGilroyFont';
+    src: url(../font/Gilroy-Font/Gilroy-UltraLight.ttf) format('truetype'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* font-family: customGilroyFont; */
+    font-family: gilroy;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* background-image: url(https://images.unsplash.com/photo-1514900389014-caae55f63513?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.204), rgba(0, 0, 0, 0.723)),
+        url(https://images.unsplash.com/photo-1514900389014-caae55f63513?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);   
+}
+
+
+#nav{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+    
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#nav #nav-part2{
+    width: 24vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h4{
+    padding: 1vh 2vw;
+    background-color: rgba(255, 255, 255, 0.432);
+}
+
+#page1 #page1Content{
+    height: 100%;
+    width: 100%;
+    padding-top: 35vh;
+    padding-left: 6vw;
+}
+
+#page1 #page1Content h1{
+    font-size: 9vh;
+    line-height: 8vh;
+    font-weight: 600;
+}
+
+#page1 #page1Content h3{
+    font-size: 1.3vw;
+    margin-top: 5vh;
+    font-weight: 200;
+}
+
+#page1 #page1Content button{
+    font-size: 1.2vw;
+    margin-top: 7vh;
+    padding: 1.5vh 7vh;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(255, 68, 0, 0.765);
+    color: white;
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding:10vh 6vw;
+}
+
+#page2 #page2Content{
+    margin-top: 4vh;
+    height: 60vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#page2 #page2Content::-webkit-scrollbar{
+    display: none;
+}
+
+
+#page2 #page2Content #page2Img{
+    height: 100%;
+    width: 20vw;
+    margin-right: 1.5vw;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#page2 #page2Content #page2Img:hover img{
+    scale:1.2;
+}
+
+#page2 #page2Content #page2Img:hover h2, #page2 #page2Content #page2Img:hover h3{
+    opacity: 1;
+}
+
+#page2 #page2Content #page2Img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+    transition: all ease 0.5s;
+}
+
+#page2 #page2Content #page2Img h2{
+    position: absolute;
+    bottom: 8vh;
+    padding-left: 2vw;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+#page2 #page2Content #page2Img h3{
+    position: absolute;
+    bottom: 17vh;
+    padding-left: 2vw;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.755);
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+#page2 h1{
+   text-align: center;
+   font-size: 6vh;
+   margin-top: 3vh;
+}
+
+#page2 h1 i{
+   background-color: rgba(128, 128, 128, 0.624);
+   color: rgba(255, 255, 255, 0.826);
+   border-radius: 50%;
+ }
+
+#page2 h1:hover{
+    scale: 1.2;
+}
+
+#page3{
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+    padding:0 6vw;
+}
+
+#page3 h1{
+    font-size: 2.5vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.876);
+}
+
+#page3 #page3Elem{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+#page3 #page3Elem .elem{
+    width: 20%;
+}
+
+#page3 #page3Elem .elem h2{
+    font-size: 1.5vw;
+    color: rgba(255, 68, 0, 0.829);
+}
+
+#page3 #page3Elem .elem p{
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.737);
+    margin-top: 1vh;
+}
+
+@media (max-width:600px) {
+
+        #nav{
+            height: 10vh;
+            padding: 0 4vw;
+            padding-right: 6vw;
+            background-color: black;
+        }
+
+        #nav h1{
+            font-size: 4vh;
+        }
+
+        #nav #nav-part2{
+            display: none;
+        }
+
+        #nav h4{
+            font-size: 2vh;
+        }
+
+        #page1 #page1Content{
+            height: 100%;
+            width: 100%;
+            padding-top: 35vh;
+            padding-left: 4vw;
+        }
+
+        #page1 #page1Content h1{
+            font-size: 7vh;
+            line-height: 7vh;
+            font-weight: 600;
+            width: 70%;
+            margin-top: -30%;
+        }
+
+        #page1 #page1Content h3{
+            font-size: 3.3vw;
+            margin-top: 5vh;
+            width: 90%;
+        }
+
+        #page1 #page1Content button{
+            font-size: 3.2vw;
+        }
+
+        #page2 h2{
+            font-size: 8vw;
+        }
+
+        #page2 #page2Content{
+            margin-top: 8vh;
+            height: 40vh;
+        }
+
+        #page2 #page2Content #page2Img{
+            width: 40vw;
+        }
+        
+
+        #page2 #page2Content #page2Img h3{
+            bottom: 8vh;
+            padding-left: 2vw;
+            opacity: 1;
+        }
+
+        #page2 #page2Content #page2Img h2{
+            bottom: 3.5vh;
+            font-size: 3vw;
+            padding-left: 2vw;
+            opacity: 1;
+        }
+
+        #page2 h1{
+            margin-top: 8vh;
+        }
+        
+        #page3{
+            height: 60vh;
+            margin-top: -8vh;
+        }
+
+        #page3 h1{
+            font-size: 7vw;
+            text-align: center;
+        }
+
+        #page3 #page3Elem{
+            flex-direction: column;
+            height: 40vh;
+            justify-content: space-between;
+            margin-top: 3vh;
+        }
+    
+
+        #page3 #page3Elem .elem{
+            width: 60%;
+            text-align: center;
+        }
+
+        #page3 #page3Elem .elem h2{
+            font-size: 3.5vw;
+        }
+
+        #page3 #page3Elem .elem p{
+            font-size: 3vw;
+            margin-top: 1vh;
+        }
+    
+}
